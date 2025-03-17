@@ -882,11 +882,15 @@ country HU: DFS-ETSI
 	# 60 GHz band channels 1-4 (ETSI EN 302 567)
 	(57000 - 66000 @ 2160), (40)
 
-country ID: DFS-JP
-	# ref: https://jdih.kominfo.go.id/produk_hukum/view/id/676/t/peraturan+menteri+komunikasi+dan+informatika+nomor+1+tahun+2019+tanggal+24+april+2019
+# Source:
+# https://jdih.kominfo.go.id/produk_hukum/view/id/676/t/peraturan+menteri+komunikasi+dan+informatika+nomor+1+tahun+2019+tanggal+24+april+2019
+# https://jdih.komdigi.go.id/produk_hukum/view/id/949/t/peraturan+menteri+komunikasi+dan+digital+nomor+2+tahun+2025
+country ID:
 	(2400 - 2483.5 @ 40), (500 mW), NO-OUTDOOR
-	(5150 - 5350 @ 80), (200 mW), NO-OUTDOOR
+	(5150 - 5350 @ 160), (200 mW), NO-OUTDOOR
 	(5725 - 5825 @ 80), (200 mW), NO-OUTDOOR
+	(5925 - 6425 @ 320), (200 mW), NO-OUTDOOR
+	(57000 - 64000 @ 2160), (10000 mW), NO-OUTDOOR
 
 # IE as part of EU/CEPT accepted decisions 2005/513/EC (5GHz RLAN, EN 301 893)
 # and 2006/771/EC (amended by 2008/432/EC, Short-Range Devices, EN 300 440)
