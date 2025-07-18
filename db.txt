@@ -1868,6 +1868,15 @@ country SV: DFS-FCC
 	(5925 - 7125 @ 320), (12), NO-OUTDOOR
 
 # Source:
+# https://btp.sx/dash/files/Telecommunications/Technical-Requirements/10t98466434723___TGVnYWwgYW5kIGlsbGVnYWwgd2lyZWxlc3MgY29tbXVuaWNhdGlvbiBkZXZpY2Vzb_64.pdf
+country SX: DFS-ETSI
+	(2400 - 2483.5 @ 40), (100 mW)
+	(5150 - 5250 @ 80), (50 mW), AUTO-BW
+	(5250 - 5350 @ 80), (21), DFS, AUTO-BW
+	(5470 - 5725 @ 160), (250 mW), DFS
+	(5725 - 5875 @ 80), (24), DFS
+
+# Source:
 # https://sytpra.gov.sy/public/uploads/files/%D8%A7%D9%84%D8%A7%D8%B7%D8%A7%D8%B1%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A/%D9%84%D9%88%D8%A7%D8%A6%D8%AD%20%D8%AA%D9%86%D8%B8%D9%8A%D9%85%D9%8A%D8%A9/%D9%84%D9%88%D8%A7%D8%A6%D8%AD%20%D8%A7%D9%84%D8%B7%D9%8A%D9%81%20%D8%A7%D9%84%D8%AA%D8%B1%D8%AF%D8%AF%D9%8A%20%D8%A7%D9%84%D8%B1%D8%A7%D8%AF%D9%8A%D9%88%D9%8A/L1.pdf
 country SY: DFS-ETSI
 	(2400 - 2483.5 @ 40), (100 mW), NO-OUTDOOR
