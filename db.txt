@@ -388,15 +388,20 @@ country BZ: DFS-JP
 	(5735 - 5835 @ 80), (30)
 
 # Sources:
-# https://www.ic.gc.ca/eic/site/smt-gst.nsf/vwapj/rss-247-i2-e.pdf/$file/rss-247-i2-e.pdf
+# RSS-247 Issue 4
+# https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-247-digital-transmission-systems-dtss-frequency-hopping-systems-fhss-and-licence-exempt-local
 # https://www.ic.gc.ca/eic/site/smt-gst.nsf/eng/sf11750.html (6 GHz operation)
 country CA: DFS-FCC
-	(2402 - 2472 @ 40), (30)
-	(5150 - 5250 @ 80), (23), NO-OUTDOOR, AUTO-BW
-	(5250 - 5350 @ 80), (24), DFS, AUTO-BW
-	(5470 - 5600 @ 80), (24), DFS
-	(5650 - 5730 @ 80), (24), DFS
-	(5735 - 5835 @ 80), (30)
+	(2400 - 2483.5 @ 40), (4000 mW)
+	(5150 - 5250 @ 80), (200 mW), NO-OUTDOOR, AUTO-BW
+	(5250 - 5350 @ 80), (500 mW), DFS, AUTO-BW
+	# This range ends at 5725 MHz, but channel 144 extends to 5730 MHz.
+	# Since 5725 ~ 5730 MHz belongs to the next range which has looser
+	# requirements, we can extend the range by 5 MHz to make the kernel
+	# happy and be able to use channel 144.
+	(5470 - 5730 @ 160), (500 mW), DFS
+	(5730 - 5850 @ 80), (4000 mW), AUTO-BW
+	(5850 - 5895 @ 40), (27), AUTO-BW
 	(5925 - 7125 @ 320), (12), NO-OUTDOOR
 
 # Source:
