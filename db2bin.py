@@ -131,13 +131,13 @@ if len(sys.argv) > 3:
     key = RSA.load_key(sys.argv[3])
     hash = hashlib.sha1()
     hash.update(output.getvalue())
-    sig = key.sign(hash.digest())
+    sig = key.sign(hash.digest(), algo='sha1')
     # write it to file
     siglen.set(len(sig))
     # sign again
     hash = hashlib.sha1()
     hash.update(output.getvalue())
-    sig = key.sign(hash.digest())
+    sig = key.sign(hash.digest(), algo='sha1')
 
     output.write(sig)
 else:
