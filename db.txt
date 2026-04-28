@@ -1135,8 +1135,9 @@ country KR: DFS-JP
 	(5250 - 5350 @ 80), (20), DFS, AUTO-BW
 	(5470 - 5725 @ 160), (20), DFS
 	(5725 - 5850 @ 80), (23)
-	# 6 GHz band
-	(5925 - 7125 @ 160), (15), NO-OUTDOOR
+	# 6 GHz band - per MSIT Notice 2026-10
+	(5925 - 6425 @ 320), (18), NO-OUTDOOR, AUTO-BW
+	(6425 - 7125 @ 320), (15), NO-OUTDOOR, AUTO-BW
 	# 60 GHz band channels 1-4
 	(57000 - 66000 @ 2160), (43)
 
