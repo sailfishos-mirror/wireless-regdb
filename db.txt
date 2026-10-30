@@ -2010,7 +2010,9 @@ country TN: DFS-ETSI
 
 # Source:
 # Technical Criteria for Radio Devices and Systems Excluded from Frequency Allocation, Sept 9, 2022
-# https://www.btk.gov.tr/uploads/pages/ftm-teknik-olcutler-ek-5.pdf
+# https://www.btk.gov.tr/s3/web-btk-site/7708c26c-5161-4919-8b3d-daa31d4ac8fb/2026/03/0965cb2b-c346-4626-85f6-fa06fb722be5.pdf
+# Fallback search link for the latest version:
+# https://www.btk.gov.tr/en/regulations?search=Frekans+Tahsisinden+Muaf+Telsiz+Cihaz+ve+Sistemlerine+%C4%B0li%C5%9Fkin+Teknik+%C3%96l%C3%A7%C3%BCtler
 # Harmonized CEPT countries for 6 GHz (ECC Decision (20)01)
 #  https://docdb.cept.org/implementation/16737
 #  https://docdb.cept.org/download/4685
