@@ -1209,16 +1209,24 @@ country KY: DFS-FCC
 	(57000 - 71000 @ 2160), (40)
 
 # Source:
-# http://adilet.zan.kz/rus/docs/V1500010730
-# http://adilet.zan.kz/rus/docs/V1500010375
+# Rules for the assignment of frequency bands ... (Order No. 34 of
+# 21 January 2015), Annex 1 (radio equipment that needs no permit),
+# item 24 "WAS/RLAN", as amended by Order No. 564/NK of 19 September 2024:
+# https://adilet.zan.kz/rus/docs/V1500010730
+# https://adilet.zan.kz/rus/docs/V2400035100
+# Table of frequency band allocations (Order No. 22 of 20 January 2015);
+# its footnote 5.446A requires ITU-R Resolution 229 in 5150-5350 MHz and
+# 5470-5725 MHz:
+# https://adilet.zan.kz/rus/docs/V1500010375
 country KZ: DFS-ETSI
 	(2400 - 2483.5 @ 40), (100 mW)
 	(5150 - 5250 @ 80), (200 mW), NO-OUTDOOR, AUTO-BW
+	# 200 mW with TPC (ITU-R Resolution 229); Linux has no TPC, so 3 dB less
 	(5250 - 5350 @ 80), (20), NO-OUTDOOR, DFS, AUTO-BW
 	(5470 - 5725 @ 160), (100 mW), NO-OUTDOOR, DFS
 	(5725 - 5850 @ 80), (100 mW), NO-OUTDOOR
 	(5925 - 6425 @ 320), (200 mW), NO-OUTDOOR
-	(57000 - 66000 @ 2160), (40)
+	(57000 - 66000 @ 2160), (40), NO-OUTDOOR
 
 country LB: DFS-FCC
 	(2402 - 2482 @ 40), (20)
