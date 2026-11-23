@@ -386,11 +386,26 @@ country BW: DFS-ETSI
 	(5470 - 5725 @ 160), (250 mW), DFS
 	(5725 - 5850 @ 80), (24), DFS
 
+# Source:
+# Resolution of the Ministry of Communications and Informatization No. 9
+# of 1 July 2013 (radio equipment operated without a frequency assignment
+# permit), items 7 and 8, as amended by Resolution No. 13 of 29 August 2016
+# and Resolution No. 1 of 10 January 2018:
+# https://pravo.by/document/?guid=3961&p0=W21327720
+# https://pravo.by/document/?guid=3961&p0=W21631260
+# https://pravo.by/document/?guid=3961&p0=W21832737
+# Both items allow use only inside buildings, structures and vehicles,
+# without antennas outside them.
+# Table of frequency band allocations (Council of Ministers Resolution
+# No. 620 of 9 August 2016); its footnote 5.446A requires ITU-R
+# Resolution 229 in 5150-5350 MHz and 5470-5725 MHz:
+# https://pravo.by/document/?guid=3961&p0=C21600620
 country BY: DFS-ETSI
-	(2402 - 2482 @ 40), (20)
-	(5170 - 5250 @ 80), (20), AUTO-BW
-	(5250 - 5330 @ 80), (20), DFS, AUTO-BW
-	(5490 - 5710 @ 160), (27), DFS
+	(2400 - 2483.5 @ 40), (100 mW), NO-OUTDOOR
+	(5150 - 5250 @ 80), (200 mW), NO-OUTDOOR, AUTO-BW
+	# 200 mW with TPC (ITU-R Resolution 229); Linux has no TPC, so 3 dB less
+	(5250 - 5350 @ 80), (100 mW), NO-OUTDOOR, DFS, AUTO-BW
+	(5650 - 5725 @ 40), (200 mW), NO-OUTDOOR, DFS
 
 country BZ: DFS-JP
 	(2402 - 2482 @ 40), (30)
