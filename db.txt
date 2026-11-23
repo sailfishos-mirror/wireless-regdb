@@ -808,16 +808,26 @@ country GD: DFS-FCC
 	(5735 - 5835 @ 80), (30)
 
 # Source:
+# National Radio Frequency Spectrum Allocation Plan (GNCC Resolution No. 6
+# of 30 June 2006), Annex 1, Table 3 (wideband data transmission systems,
+# including WAS/RLAN), as amended by GNCC Resolution No. 9 of 25 July 2024:
+#  https://matsne.gov.ge/ka/document/view/6234066
+# Note 3.3 of the table requires TPC in 5250-5350 MHz and 5470-5725 MHz and
+# lowers the limits by 3 dB without it. 5725-5875 MHz is listed only for
+# EN 302 502 (fixed broadband data transmission), not for WAS/RLAN.
 # Harmonized CEPT countries for 6 GHz (ECC Decision (20)01)
 #  https://docdb.cept.org/implementation/16737
 #  https://docdb.cept.org/download/4685
 country GE: DFS-ETSI
-	(2402 - 2482 @ 40), (20)
-	(5170 - 5250 @ 80), (18), AUTO-BW
-	(5250 - 5330 @ 80), (18), DFS, AUTO-BW
+	(2400 - 2483.5 @ 40), (100 mW)
+	(5150 - 5250 @ 80), (200 mW), NO-OUTDOOR, AUTO-BW
+	# 200 mW with TPC (note 3.3); Linux has no TPC, so 3 dB less
+	(5250 - 5350 @ 80), (100 mW), NO-OUTDOOR, DFS, AUTO-BW
+	# 1 W with TPC (note 3.3); Linux has no TPC, so 3 dB less
+	(5470 - 5725 @ 160), (500 mW), DFS
 	(5945 - 6425 @ 320), (23), NO-OUTDOOR
-	# 60 GHz band channels 1-4, ref: Etsi En 302 567
-	(57000 - 66000 @ 2160), (40)
+	# 60 GHz band channels 1-6, ref: ETSI EN 302 567
+	(57000 - 71000 @ 2160), (40)
 
 country GF: DFS-ETSI
 	(2402 - 2482 @ 40), (20)
