@@ -2118,12 +2118,15 @@ country TZ: DFS-ETSI
 # 60 GHz: NKEK Resolution No. 361 of 3 July 2024, list of radio equipment
 # used under general authorisation, item 78 (MGWS, 57-66 GHz): 20 dBm
 # e.i.r.p., 13 dBm/MHz, indoor use only.
+# 2.4 GHz: items 52 (RLAN terminals) and 53 (Wi-Fi access points) of the
+# same list: 100 mW e.i.r.p.; access points indoors and outdoors, with the
+# antenna at most 6 m above ground.
 #  https://zakon.rada.gov.ua/laws/show/z1175-24
 # Harmonized CEPT countries for 6 GHz (ECC Decision (20)01)
 #  https://docdb.cept.org/implementation/16737
 #  https://docdb.cept.org/download/4685
 country UA: DFS-ETSI
-	(2400 - 2483.5 @ 40), (100 mW), NO-OUTDOOR
+	(2400 - 2483.5 @ 40), (100 mW)
 	(5150 - 5250 @ 80), (100 mW), NO-OUTDOOR, AUTO-BW, wmmrule=ETSI
 	(5250 - 5350 @ 80), (100 mW), DFS, NO-OUTDOOR, AUTO-BW, wmmrule=ETSI
 	(5470 - 5725 @ 160), (100 mW), DFS, NO-OUTDOOR, wmmrule=ETSI
